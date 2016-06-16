@@ -2,18 +2,20 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title SUMA DE DOS NÚMEROS
+	title APROBADO O REPROBADO
 	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
 body.text-center
 	strong
 		h1 EJERCICIO UNO
-	h2 #Suma de dos números
+	h2 #Aprobado o reprobado
 	.operacion
 		br			
-		input#num_one(type="text" placeholder='Ingresa un número' class='btn btn-warning')
+		input#num_one(type="text" placeholder='Ingresa tu primera nota' class='btn btn-warning')
 		button(disabled) +
-		input#num_two(type="text" placeholder='Ingresa un número' class='btn btn-warning')
-		button(type='button' onclick="suma()") =
-		input#suma(type="text" placeholder='Resultado' class='btn btn-danger' disabled)
+		input#num_two(type="text" placeholder='Ingresa tu segunda nota' class='btn btn-warning')
+		button(disabled) +
+		input#num_thre(type="text" placeholder='Ingresa tu tercera nota' class='btn btn-warning')
+		button(type='button' onclick="promediar()") =
+		input#promedio(type="text" placeholder='Promedio final' class='btn btn-danger' disabled)
 	script(type="text/javascript" src="main.js")
 		
