@@ -2,18 +2,26 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title SUMA DE DOS NÚMEROS
+	title VIAJE ESCOLAR
 	link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
 body.text-center
 	strong
-		h1 EJERCICIO UNO
-	h2 #Suma de dos números
+		h1 EJERCICIO SIETE
+	h2 #Viaje Escolar
 	.operacion
 		br			
-		input#num_one(type="text" placeholder='Ingresa un número' class='btn btn-warning')
-		button(disabled) +
-		input#num_two(type="text" placeholder='Ingresa un número' class='btn btn-warning')
-		button(type='button' onclick="suma()") =
-		input#suma(type="text" placeholder='Resultado' class='btn btn-danger' disabled)
+		input#num_one(type="text" placeholder='Número de estudiantes' class='btn btn-warning')
+		br
+		br
+		button(type='button' onclick="calcular()") Calcular 
+		br
+		br
+		.col-md-6
+			h5 Costo de la renta del autobús
+			input#num_two(type="text" placeholder='Pago a la compañia de bus' class='btn btn-warning' disabled)
+		.col-md-6
+
+			h5 Lo que debe pagar cada alumno
+			input#num_three(type="text" placeholder='Pago por alumno' class='btn btn-danger' disabled)
 	script(type="text/javascript" src="main.js")
 		

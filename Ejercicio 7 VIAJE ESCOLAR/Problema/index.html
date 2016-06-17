@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-  <meta charset="UTF-8">
-  <title>Viaje Escolar</title>
+  <meta charset="UTF-8"/>
+  <title>VIAJE ESCOLAR</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"/>
 </head>
-<body>
+<body class="text-center"><strong>
+    <h1>EJERCICIO SIETE</h1></strong>
+  <h2>#Viaje Escolar</h2>
+  <div class="operacion"><br/>
+    <input id="num_one" type="text" placeholder="Número de estudiantes" class="btn btn-warning"/><br/><br/>
+    <button type="button" onclick="calcular()">Calcular </button><br/><br/>
+    <div class="col-md-6">
+      <h5>Costo de la renta del autobús</h5>
+      <input id="num_two" type="text" placeholder="Pago a la compañia de bus" disabled="disabled" class="btn btn-warning"/>
+    </div>
+    <div class="col-md-6">
+      <h5>Lo que debe pagar cada alumno</h5>
+      <input id="num_three" type="text" placeholder="Pago por alumno" disabled="disabled" class="btn btn-danger"/>
+    </div>
+  </div>
   <script type="text/javascript" src="main.js"></script>
 </body>
-</html>
