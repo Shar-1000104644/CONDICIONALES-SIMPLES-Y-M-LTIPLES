@@ -14,52 +14,45 @@
 function calcular(){
 	var alumnos = document.getElementById('num_one').value;
 	var costoA1=65;
-	var costoB1 = alumnos*costoA1;  		//100 alumnos o más
+	var costoB1 = alumnos*costoA1;  //100 alumnos o más
 	var costoA2=70;
-	var costoB2 = alumnos*costoA2;		//de 50 a 99 alumnos
+	var costoB2 = alumnos*costoA2;	//de 50 a 99 alumnos
 	var costoA3 =95;
-	var costoB3 = alumnos*costoA3;       //de 30 a 49
-	var costoB4 =4000;		//si son menos de 30
+	var costoB3 = alumnos*costoA3;  //de 30 a 49
+	var costoB4 =4000;				//si son menos de 30
 	var costoA4 = Math.round(costoB4/alumnos);
 
 	if(alumnos>= 100){
 		document.getElementById('num_two').value = costoB1;
 		document.getElementById('num_three').value = costoA1;
-		// var texto = document.createElement('h2');
-		// var letra = document.createTextNode('Costo de la renta del autobús es:' + ' ' + costoB1 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA1);
-		// texto.appendChild(letra);
-		// document.body.appendChild(texto);
-		function escribir('h2','/'Costo de la renta del autobús es:' + ' ' + costoB1 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA1)');
+		escribir('Costo de la renta del autobús es:' + ' ' + costoB1 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA1);
+
 	}
 	else if(alumnos>=50 || alumnos>=99){
 		document.getElementById('num_two').value = costoB2;
 		document.getElementById('num_three').value = costoA2;
-		var texto = document.createElement('h2');
-		var letra = document.createTextNode('Costo de la renta del autobús es:' + ' ' + costoB1 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA1);
-		texto.appendChild(letra);
-		document.body.appendChild(texto);
+		escribir('Costo de la renta del autobús es:' + ' ' + costoB2 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA2);
+		
 	}
 	else if(alumnos>=30 || alumnos>=49){
 		document.getElementById('num_two').value = costoB3;
 		document.getElementById('num_three').value = costoA3;
-		var texto = document.createElement('h2');
-		var letra = document.createTextNode('Costo de la renta del autobús es:' + ' ' + costoB1 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA1);
-		texto.appendChild(letra);
-		document.body.appendChild(texto);
+		escribir('Costo de la renta del autobús es:' + ' ' + costoB3 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA3);
+		
 	}
 	else{
 		document.getElementById('num_two').value = costoB4;
 		document.getElementById('num_three').value = costoA4;
-		var texto = document.createElement('h2');
-		var letra = document.createTextNode('Costo de la renta del autobús es:' + ' ' + costoB1 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA1);
-		texto.appendChild(letra);
-		document.body.appendChild(texto);
+		escribir('Costo de la renta del autobús es:' + ' ' + costoB4 + ' ' + 'Lo que debe pagar cada alumno es:' + ' ' + costoA4);
+		
 	}
 
-	function escribir(elemento,mensaje){
-		var texto = document.createElement(elemento);
-		var letra = document.createTextNode(mensaje);
-		texto.appendChild(letra);
-		document.body.appendChild(texto);
-	}
 }
+
+function escribir(mensaje){
+	var texto = document.createElement('h2');
+	var letra = document.createTextNode(mensaje);
+	texto.appendChild(letra);
+	document.body.appendChild(texto);
+}
+
