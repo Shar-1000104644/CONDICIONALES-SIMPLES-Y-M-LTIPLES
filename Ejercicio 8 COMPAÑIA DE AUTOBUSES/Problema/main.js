@@ -34,7 +34,6 @@ function costoTotal(){
 			break;
 
 		default:
-
 			break;
 	}
 
